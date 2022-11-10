@@ -1,0 +1,173 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController! {% endblock %}
+
+{% block body %}
+			<main>
+				<div class="container-fluid py-5">
+					<div class="row">
+						<div class="col-lg d-flex align-items-center justify-content-center d-none d-lg-block">
+							<img src="/imgs/subscribe.png" alt="" width="80%"/>
+						</div>
+
+						<div class="col-lg">
+							<div class="d-flex align-items-center justify-content-center py-5">
+								<div class="px-3">
+										<div class="mt-5"> <p class="m-0 fs-3 lh-lg subtitle fw-bold" id="subscribe">
+											Si vous aussi vous voulez saisir cette opportunité, inscrivez-vous dès
+											maintenant pour intégerer la prochaîne promotion de Talent Factory 3.0.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="d-flex align-items-center justify-content-center py-5">
+									<img src="/imgs/flèche_down.png" alt="" width="100px"/>
+								</div>
+								<div class="d-flex align-items-center justify-content-center">
+									<a class="nav-link text-uppercase button type" href="{{ path('app_register') }}">
+										S' inscrire
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<hr/>
+
+				<div class="container-fluid my-5">
+					<div class="row">
+						<p class="fs-1 text-center title">Nos références</p>
+
+						<div class="row my-3">
+							<div class="col references py-5 px-3 subtitle text-white">
+								<p class="text-uppercase fw-bold sous_titre yellow_color">
+									passion for humanity
+								</p>
+
+								<p>
+									<b>Passion for Humanity</b>
+									ou
+									<b>P4H</b>
+									, est
+									                                une organisation fondée en 2017.
+									<br/>
+									Née de l'engagement humanitaire de Maltem
+									                                Consulting Group et de la fondation Aldinie. A
+									                                vocation solidaire, elle vise à former les
+									                                jeunes Malgaches issus de milieux modestes afin
+									                                de les amener à travailler sur des projets
+									                                innovants, touchant la technologie numérique.
+								</p>
+
+								<p>
+									<span class="fw-bold">Secteur :
+									</span>
+									Informatique, Formation, Education et
+									                                Communication
+								</p>
+
+								<p>
+									<span class="fw-bold">Site web :</span>
+									<span>
+										<a href="http://passion4humanity.com" target="_blank">http://passion4humanity.com
+										</a>
+									</span>
+								</p>
+							</div>
+
+							<div class="col d-none d-lg-flex justify-content-center align-items-center">
+								<div>
+									<img src="/imgs/logo_p4h.jpg" alt="" width="
+									                                200px"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="row my-3">
+							<div class="col d-none d-lg-flex justify-content-center align-items-center">
+								<div>
+									<img src="imgs/logoRISE.jpg" alt="" width="
+									                                200px"/>
+								</div>
+							</div>
+
+							<div class="col references py-5 px-3 subtitle text-white">
+								<p class="text-uppercase fw-bold sous_titre yellow_color">
+									Association RISE
+								</p>
+								<p>
+									Créée en 2020 à l’initiative de "Maltem Group" ,
+									                                l'association RISE a pour vocation d'œuvrer pour
+									                                la jeunesse malgache, prioritairement dans le
+									                                secteur de l'éducation, mais aussi de la santé.
+									                                Rise œuvre pour l'avenir de jeunes malgache
+									                                grâce à un programme très innovant
+									                                d'accompagnement multi-facteur, études,
+									                                hébergement, suivi social et santé. En mode tout
+									                                inclus ! Initiative engagée pour un
+									                                développement social durable, RISE s’inscrit
+									                                dans l’atteinte des Objectifs de Développement
+									                                Durable (ODD) établis par les Etats membres des
+									                                Nations Unis. Elle participe à l’Agenda 2030,
+									                                par sa contribution, notamment, aux thématiques
+									                                de réduction des inégalités, d’accès à une
+									                                éducation de qualité et à un emploi décent.
+									                                Secteur Organismes civiques et sociaux
+								</p>
+								<p>
+									<span class="fw-bold">Site web :</span>
+									<span>
+										<a href="https://rise.passion4humanity.com" target="_blank">https://rise.passion4humanity.com
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<hr/>
+
+				<div class="py-5">
+					<div class="row text-center pb-5">
+						<p class="fs-1 title">Nos partenaires</p>
+					</div>
+
+					<div class="bg-white d-md-flex justify-content-center align-items-center gap-lg-5 gap-md-2 text-center">
+						<div class="row py-2">
+							<div class="col-sm col-md">
+								<a href="#">
+									<img src="/imgs/logo-Maltem.jpg" alt="" width="170px"/>
+								</a>
+							</div>
+
+							<div class="col-sm col-md">
+								<a href="#">
+									<img src="/imgs/logo-Aldinie.jpg" alt="" width="170px"/>
+								</a>
+							</div>
+
+							<div class="col-sm col-md d-flex align-items-center justify-content-center py-3">
+								<a href="#">
+									<img src="/imgs/logo-Akamasoa.jpg" alt="" width="100px"/>
+								</a>
+							</div>
+
+							<div class="col-sm col-md pb-3">
+								<a href="#">
+									<img src="/imgs/logo-Bocasay.jpg" alt="" width="100px"/>
+								</a>
+							</div>
+							<div class="col-sm col-md">
+								<a href="#">
+									<img src="/imgs/logo-techzara.jpg" alt="" width="200px"/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+{% endblock %}
