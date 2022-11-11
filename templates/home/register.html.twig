@@ -3,31 +3,25 @@
 
 {% block body %}
 	<div class="container">
-
-    {% for label, messages in app.flashes %}
-        <div class="container">
-            <div class="alert alert-{{ label }}">
-                {% for message in messages %}
-                    <p>{{ message | raw }}</p>
-                {% endfor %}
-            </div>
-        </div>
-    {% endfor %}
-
-    <div class="titre">
-                <h1 class="text is-family-monospace is-size-1 animate__animated animate__bounce">INCRIPTION TAFA 3.0</h1>
-            </div>
-		<div class="formulaire">
-            
-			{{ form_start(form) }}
-			{{ form_widget(form) }}
-			    <div class="bouton">
-				    <button type="submit" name="btn" class="button animate__heartBeat ">Envoyer</button>
-			    </div>
-			{{ form_end(form) }}
-	    </div>
-	    <div class="image">
-		    <img src="/imgs/tafa.jpg" alt="TAFA 2.0">
-	    </div>
-    </div>
+		<div class="titre">
+			<h1 class="text is-family-monospace is-size-1 animate__animated animate__bounce">INCRIPTION TAFA 3.0</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="formulaire">
+					{{ form_start(form) }}
+					{{ form_widget(form) }}
+					<div class="bouton">
+						<button type="submit" name="btn" class="btn bg-secondary">Envoyer</button>
+					</div>
+					{{ form_end(form) }}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="image">
+					<img src="/imgs/tafa.jpg" alt="TAFA 2.0" width="100%">
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}

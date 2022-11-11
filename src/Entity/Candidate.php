@@ -2,11 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\CandidateRepository;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\CandidateRepository;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=CandidateRepository::class)
+ * @UniqueEntity("email", message="Vous avez déja envoyé une candidature")
  */
 class Candidate
 {

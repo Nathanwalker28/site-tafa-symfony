@@ -37,10 +37,10 @@ class HomeController extends AbstractController
 
             $url_resume = $form->get('url_resume')->getData();
             $url_cover_letter_resume = $form->get('url_cover_letter')->getData();
+            
             if($url_resume) {
                 $url_resume_name = $fileUploader->upload($url_resume);
                 $url_cover_letter_name = $fileUploader->upload($url_cover_letter_resume);
-
 
                 $candidate->setUrlResume($url_resume_name);
                 $candidate->setUrlCoverLetter($url_cover_letter_name);
